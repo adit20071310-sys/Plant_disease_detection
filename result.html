@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static',
+      filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Prediction Result</h1>
+
+<h2>Disease:
+{{ disease }}
+</h2>
+
+<h3>
+Confidence:
+{{ confidence }}%
+</h3>
+
+<p>
+Treatment:
+{{ treatment }}
+</p>
+
+<a href="/">
+Try Another Image
+</a>
+
+</div>
+
+</body>
+</html>
